@@ -1,0 +1,21 @@
+{
+  "name": "mm-language-match-bot",
+  "version": "1.0.0",
+  "main": "src/bot/index.js",
+  "scripts": {
+    "start": "node server.js",
+    "bot": "node src/bot/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@libsql/client": "^0.17.4",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "node-cron": "^4.5.0",
+    "telegraf": "^4.16.3"
+  }
+}

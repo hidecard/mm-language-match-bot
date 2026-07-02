@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/src/api/$1" },
+    { "source": "/(.*)", "destination": "/admin_dashboard/public/$1" }
+  ]
+}
