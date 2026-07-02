@@ -1,6 +1,17 @@
 {
+  "buildCommand": "npm install",
+  "outputDirectory": ".",
+  "framework": "express",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/src/api/$1" },
-    { "source": "/(.*)", "destination": "/admin_dashboard/public/$1" }
-  ]
+    { "source": "/api/admin/(.*)", "destination": "/api/admin/$1" },
+    { "source": "/admin(.*)", "destination": "/admin$1" },
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "functions": {
+    "server.js": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  }
 }
